@@ -1,0 +1,27 @@
+* {
+  background: transparent; !important
+  color: black;
+  font-size: 12pt;
+  font-family: serif;
+  font-size: 12pt;
+  border: 1pt solid black;
+  margin: 0.5in;
+  padding: 0.25in;
+}
+
+nav {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[href^="http"] {
+  display: inline; /* sets up the link text... */
+}
+
+a[href^="http"]:after {
+  content: " (" attr(href) ") ";
+  /* ...so the url appears after! */
+}
