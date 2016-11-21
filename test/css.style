@@ -1,0 +1,5 @@
+.button:hover {
+  background-color: orange;
+  color: green;
+  opacity: 0.7;
+}
