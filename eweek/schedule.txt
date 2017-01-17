@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="eweekcss2016/timeline.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="page-header">
+    <h3 id="timeline">Febuary 20th</h3>
+  </div>
+  <ul class="timeline">
+    <li>
+      <div class="timeline-badge"><img src="eweekcss2016/images/bb_8.png" class="img-thumbnail" alt="140x140"/></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">U-Hack</h4>
+        </div>
+        <div class="timeline-body">
+            IEEE
+            <p> Location: SCC Ballrooms</p>
+                  <p> The University of Miami IEEE would like to bring you UHack, a 24-hour hackathon. UHack will take place at the beginning of Engineers Week, Saturday February 20th, and finish the next day, Sunday February 21st. Taking place in the Ballrooms in the Student Activity Center at the University of Miami, we are open to any student from any educational institution who would like to take some time off their semester by making something fun and possibly win some great prizes from our amazing sponsors. All for FREE. </p> <br>
+
+<p> This year, we are going to FIND THE DEVELOPER IN U and focus on building projects for the benefit of improving one’s lifestyle. This completely open-ended, you can utilize any platform, framework, language, or hardware device they desire and utilize it to their own will for the benefit of making something better. You can start from scratch or hack something previously created in order to change/improve its functionality or purpose. If you want to make a real-life life-hack, this is the place to be! </p>
+<br>
+<p> For more information and to register go to: <a href="http://coe.miami.edu/uhack2015/"> http://coe.miami.edu/uhack2015/</a> 
+            </p>
+        </div>
+      </div>
+    </li>
+      <div class="page-header">
+    <h3 id="timeline">Febuary 22nd</h3>
+  </div>
+    <li class="timeline-inverted">
+      <div class="timeline-badge"><img src="eweekcss2016/images/Millennium-Falcon-icon.png" class="img-thumbnail" alt="140x140"/></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Graduate Student Research Expo </h4>
+        </div>
+        <div class="timeline-body">
+            <img src="eweekcss2016/images/GESC.png" >
+            
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/droid-helmet.png" class="img-thumbnail" alt="140x140"/></div>
+</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Spring Expo Fair </h4>
+        </div>
+        <div class="timeline-body">
+          <p>
+            Engineering Advisory Board
+            <br> CoE Green
+            <br> 11 AM - 2 PM</p>
+            <p>Get involved with the College of Engineering. Visit McArthur Green at 11:00 am and talk to our student organizations.	</p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/Chewbacca.ico" class="img-thumbnail" alt="140x140"/></div>
+</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title"> Blast Off!</h4>
+        </div>
+        <div class="timeline-body">
+          <p>
+            AIAA
+            <br> Location: TBA
+            <br> 6 PM</p>
+            <p>How does rocket fuel burn? How do hybrid motors work? How are safety systems designed? During this demonstration, the Rocket Canes will briefly cover the history of rocketry as well as provide answers to these questions. Come by and witness engineering take us to the stars. It's not like it's rocket science.</p>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/droid-helmet.png" class="img-thumbnail" alt="140x140"/></div>
+</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">SHPE Entrepreneurship Forum</h4>
+        </div>
+        <div class="timeline-body">
+          <p>
+            SHPE
+            <br> MEA 202
+            <br> 7 PM - 9 PM</p>
+            <p> Join SHPE for a night of Networking. This forum will provide real world context to explore entrepreneurship in action. </p>
+    <p>At 7:00 listen to our Keynote Speaker.</p>
+		<p>Followed by refreshments at 8:00 p.m. in the Patio. Network with professionals and enjoy our refreshments. </p>
+        </div>
+      </div>
+    </li>
+    
+
+  <div class="page-header">
+    <h3 id="timeline">Febuary 23rd</h3>
+  </div>
+  
+    <li class="timeline-inverted">
+          <div class="timeline-badge"><img src="eweekcss2016/images/empire_insignia.png" class="img-thumbnail" alt="140x140"/></div>
+
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title"> Dominoes Tournament</h4>
+        </div>
+        <div class="timeline-body">
+           <p> ACE </p>
+                  <p> COE Green </p>
+                  <p> 6:30 PM </p>
+                  <p> The Association of Cuban Engineers (ACE) will be hosting a dominoes tournament for the College of Engineering E-Week Tuesday the 23rd of February, starting at 6:30 PM.  Different engineering organizations and student groups can form two-person teams to play in a double-elimination domino tournament.  Teams will compete in best-of-five domino matches.  Come and experience the cultural game of dominoes and socialize with your fellow engineers!  Registration for teams will be open as EWeek approaches, so get ready!</p>
+        </div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/rebel_alliance_logo.png" class="img-thumbnail" alt="140x140"/></div>
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Game Day</h4>
+        </div>
+        <div class="timeline-body">
+          <p> Engineering Advisory Board </p>
+                  <p> CoE Green </p>
+                  <p> 11 AM - 2 PM </p>
+        </div>
+      </div>
+    </li>
+
+                  
+    <li class="timeline-inverted">
+          <div class="timeline-badge"><img src="eweekcss2016/images/at-at-512.png" class="img-thumbnail" alt="140x140"/></div>
+
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Duct Tape Competition</h4>
+        </div>
+        <div class="timeline-body">
+          <p> Engineering Advisory Board </p>
+                  <p> Wall Behind Engineering Building </p>
+                  <p> 1:45 pm </p>
+        </div>
+      </div>
+    </li>
+  <div class="page-header">
+    <h3 id="timeline">Febuary 24th</h3>
+  </div>
+    <li>
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/Light-Saber-Green.ico" class="img-thumbnail" alt="140x140"/></div>
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Under-Representation of Minorities in STEM Forum</h4>
+        </div>
+        <div class="timeline-body">
+          <p> UM Faculty Club </p>
+                  <p> 8 PM </p>
+                  <p>
+                      The forum is an open conversation about the lack of minorities in STEM fields. We will focus on the reasons as to why this is so and work towards finding a solution to overcome this challenge/problem.
+                  </p>
+        </div>
+      </div>
+    </li>
+    
+
+    <li class="timeline-inverted">
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/Death-Star.png" class="img-thumbnail" alt="140x140"/></div>
+
+      </i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Industry Night	 </h4>
+        </div>
+        <div class="timeline-body">
+          <p> BMES</p>
+                  <p> SCC Ballrooms </p>
+                  <p> 7:00 PM	 </p>
+                  <p> Join the Biomedical Engineering Society for a night filled with networking.
+				Meeting people in industry and learn about the different companies in your field. </p>
+
+        </div>
+      </div>
+    </li>
+    <li>
+    <div class="timeline-badge">
+          <div class="timeline-badge"><img src="eweekcss2016/images/Boba-Fett-icon.png" class="img-thumbnail" alt="140x140"/></div>
+
+    </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Concrete Canoes	</h4>
+        </div>
+        <div class="timeline-body">
+          <p> ASCE</p>
+                  <p> Lake </p>
+                  <p> 12-3:30 PM </p>
+                  <p> Join the American Society of Civil Engineers in a concrete canoe extravaganza on the shore by the Rat!s</p>
+        </div>
+      </div>
+    </li>
+    <div class="page-header">
+            <h3 id="timeline">Febuary 25th</h3>
+  </div>    
+    <li>
+    <div class="timeline-badge">
+              <div class="timeline-badge"><img src="eweekcss2016/images/Sensibleworld-Starwars-Leia.ico" class="img-thumbnail" alt="140x140"/></div>
+    </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Introduce a Girl to Engineering Day</h4>
+        </div>
+        <div class="timeline-body">
+                  <p> SWE </p>
+                  <p> Location: TBA </p>
+                  <p> 9 AM </p>
+                  <p> SWE welcomes over 200 girls from South Florida for this day that will open eyes, minds and imaginations to the world of engineering and women engineers' place in it. </p>
+				  <p> Featuring distinguished speakers, and fun activities, this is a day that truly changes lives! </p>
+        </div>
+      </div>
+    </li>
+    
+    <li class="timeline-inverted">
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/Sensibleworld-Starwars-C3PO.ico" class="img-thumbnail" alt="140x140"/></div>
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Pegasus Tour </h4>
+        </div>
+        <div class="timeline-body">
+          <p> DASA, IEEE, & CCS</p>
+                  <p> Ungar Conference Room (203) </p>
+                  <p> 5 PM </p>
+                  <p>Pre-tour chat on the supercomputer Pegasus. Find out all you need to know before going to the Terremark building and observing first hand the supercomputer Pegasus. Get an insight on how it works, it's capabilities and find out what the new VizLab is all about!</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/Jonathan-Rey-Star-Wars-Vehicles-Tie-Fighter-03.ico" class="img-thumbnail" alt="140x140"/></div>
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Dunk tank</h4>
+        </div>
+        <div class="timeline-body">
+              <p> IIE </p>
+              <p> CoE Green </p>
+              <p> 11 AM - 3 PM </p>
+        </div>
+      </div>
+    </li>
+  <div class="page-header">
+    <h3 id="timeline">Febuary 26th</h3>
+  </div>
+    <li class="timeline-inverted">
+      <div class="timeline-badge warning">
+            <div class="timeline-badge"><img src="eweekcss2016/images/Lightsaber-Red-icon.png" class="img-thumbnail" alt="140x140"/></div>
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Engine Rebuild Project </h4>
+        </div>
+        <div class="timeline-body">
+              <p> ASME </p>
+              <p> Location: TBA </p>
+              <p> 10 AM - 2 PM</p>
+              <p>
+                Engine rebuild 101 is for those who know little to nothing about engines and want to learn the fundamentals. Hosted by UM’s ASME it will be a hands on learning experience where teams of two will have the chance to dismantle, clean, reseal, and reassemble a basic two stroke or four stroke engine. Tools and engines will be provide, and a workshop leader will guide you every step of the way  The event will take place on February 26 here at the University of Miami for more details rsvp your spot today by emailing .  <a href="mailto:hurricaneasme@gmail.com" target="_blank"><span autoid="_rpc_6">hurricaneasme@gmail.com</span></a>
+            </p>
+        </div>
+      </div>
+    </li>
+<div class="page-header">
+    <h3 id="timeline">Febuary 29th</h3>
+  </div>
+    <li>
+      <div class="timeline-badge">
+            <div class="timeline-badge"><img src="eweekcss2016/images/R2d2.ico" class="img-thumbnail" alt="140x140"/></div>
+
+      </div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">Build It</h4>
+          <h5> <i>Better, Bigger & Beyond</i></h5>
+        </div>
+        <div class="timeline-body">
+              <p> ASME </p>
+              <p> Location: TBA </p>
+              <p> Time: TBA </p>
+              <p>
+               Build-It it is an annual community outreach event organized and hosted by the University of Miami’s American Society of Mechanical Engineers.  Build-It  is primarily a science and engineering based competition where schools get to take part in a timed design  and construction effort which they will then put to the test against the other attendees. The winning team is then awarded the Build-It trophy until the next year. Aside from the fun competition Build-It also invites professional speakers to inspire and expose students to the multiple possible and extraordinary routes to success and opportunity in higher education especially in the STEM based fields. Overall build-it is a massive event meant to expose students to the fundamentals of stem and spark the flame to future great scientific minds, and to remind kids that no matter what they've been told they have opportunity in the world.
+              
+              </p>
+        </div>
+      </div>
+    </li>   
+    
+
+    
+    
+  </ul>
+</div>
+</body>
+</html>
