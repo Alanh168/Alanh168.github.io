@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Cabin+Sketch|Holtwood+One+SC|Pacifico');
+
+@font-face {
+    font-family: WoodLook;
+    src: url("../fonts/WoodLook.ttf");
+}
+
+@font-face {
+  font-family: BARK;
+  src: url("../fonts/BARK.ttf");
+}
+
+body {
+  background-image: url("../img/light-wood-background.jpg");
+}
+
+header h1 {
+  margin: 0px;
+  text-align: center;
+  font-family: 'BARK', cursive;
+  font-size: 50px;
+  color: brown;
+  /*background-image: url("../img/light-wood-small.jpg");*/
+  border-radius: .5;
+}
+
+nav {
+  width: 50%;
+  text-align: center;
+}
+
+nav a {
+  padding: 10px 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-image: url("light-wood-small.jpg");
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 9px #a7844e;
+  display: inline-block;
+  text-decoration: none;
+  color: brown;
+
+}
+
+nav a:hover {
+  transform: translateY(2px);
+  box-shadow: 0 7px #a7844e;
+}
+
+nav a:active {
+  box-shadow: 0 5px #a7844e;
+  transform: translateY(4px);
+}
+
+.indent {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+.right-tilt {
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+	transform: rotate(7deg);
+}
+
+
+.paper {
+  width: 20%;
+  height: 30%;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background-color: white;
+  text-align: center;
+}
+
+.polaroid {
+    width: 30%;
+    background-color: white;
+		padding:10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		display: block;
+		margin: 0 auto;
+}
+
+#portfolio {
+
+}
+
+#portfolio ul {
+  list-style: none;
+}
+
+#web-links {
+
+}

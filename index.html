@@ -2,17 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>My Resume</title>
-  <link href="style.css" rel="stylesheet" media="screen" />
-  <link href="print.css" rel="stylesheet" media="print" />
+  <title>Alan Hernandez Personal Web Page</title>
+  <link href="css/style.css" rel="stylesheet" media="screen" />
+  <link href="css/print.css" rel="stylesheet" media="print" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>Alan Hernandez</h1>
-  <h2 class="portfolio">Portfolio</h2>
-  <h2 class="web-links">Web Links</h2>
-  <ul>
-    <li>Linkedin</li>
-    <li>Github</li>
-  </ul>
+  <div class="container-fluid">
+    <header>
+      <h1 class="">Alan Hernandez</h1>
+    </header>
+    <nav>
+      <a href="#resume">Resume</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#web-links">Web Links</a>
+    </nav>
+
+    <img class="img-responsive polaroid right-tilt" alt="Profile Picture" src="img/profile-pic.jpg"/>
+
+    <div id="portfolio">
+      <h2><a>Portfolio</a></h2>
+      <ul>
+        <li class="paper"></li>
+        <li class="paper"></li>
+        <li class="paper"></li>
+        <li class="paper"></li>
+      </ul>
+    </div>
+
+    <div id="web-links">
+      <h2><a>Web Links</a></h2>
+      <ul>
+        <li><a>Linkedin</a></li>
+        <li><a>Github</a></li>
+      </ul>
+    </div>
+
+  </div>
 </body>
 </html>
