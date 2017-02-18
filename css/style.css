@@ -1,9 +1,182 @@
-@font-face {
-
+body {
+  height: 100%;
 }
 
-body {
+#navigation ul {
+  position: fixed;
+  list-style-type: none;
+  padding: 0;
+  background-color: rgba(175, 175, 175, 0.8);
+  width: 100%;
+}
 
+#navigation a {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+#navigation li {
+  float: left;
+  border-bottom: 2px solid #888;
+  background-color: rgb(155, 155, 155);
+}
+
+#nav-name {
+  margin-left: 20%;
+  margin-right: 40%;
+}
+
+a:hover:not(.active) {
+  background-color: #E0E0E0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+h1 {
+  color: #CCC;
+  text-shadow: 3px 3px #303030;
+  font-family: "Helvetica neue";
+  margin: 0;
+}
+
+#home h1 {
+  font-weight: bold;
+  padding-top: 15%;
+  font-size: 500%;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+#home h2 {
+  font-weight: bold;
+  font-size: 250%;
+  color: #000;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+hr {
+  width: 45%;
+  noshade: noshade;
+  size: 60px;
+  color: #000;
+}
+
+.btn-home-links {
+  font-weight: bold;
+  font-size: 150%;
+  margin-right: 10px;
+  color: black;
+  background-color: #DDD;
+  border: 4px;
+  box-shadow: 3px 3px 3px #000;
+}
+
+.btn-home-links:hover:not(.active) {
+  color: white;
+  background-color: #000;
+}
+#about h1 {
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 10%;
+  font-size: 500%;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  text-align: left;
+}
+
+#about p {
+  width: 50%;
+  font-weight: bold;
+  color: white;
+  //padding-top: 10%;
+  padding-left: 10%;
+  font-size: 250%;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  text-align: left;
+}
+#portfolio h1 {
+  font-weight: bold;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  font-size: 400%;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.galleryItem {
+ color: #797478;
+ font: 10px/1.5 Verdana, Helvetica, sans-serif;
+ float: left;
+}
+
+.galleryItem h3 {
+ text-transform: uppercase;
+}
+
+.gallery-item img {
+ max-width: 20%;
+}
+
+.gallery-item:hover:not(.active)
+{
+
+}
+#contact h1 {
+  text-align: left;
+  width: 60%;
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-bottom: 3%;
+  font-size: 400%;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.btn-contact-links {
+  display: block;
+  font-weight: bold;
+  font-size: 150%;
+  margin-right: 10px;
+  color: black;
+  background-color: #DDD;
+  border: 4px;
+  box-shadow: 3px 3px 3px #000;
+}
+
+.btn-contact-links:hover:not(.active) {
+  color: white;
+  background-color: #000;
+}
+.home-background {
+  height: 900px;
+  background-image: url("https://wallpaperscraft.com/image/room_office_desk_chair_shelves_39161_3840x2160.jpg");
+}
+.about-background {
+  height: 900px;
+  background-image: url("https://lh5.googleusercontent.com/-kVisKfWLyRM/TYoNAdVNINI/AAAAAAAAALc/vnqLh-46CSo/s1600/black+and+white+city+towers+wall+ink_bluesky.png");
+}
+.portfolio-background {
+  height: 900px;
+  background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper.jpeg");
+}
+.contact-background {
+  height: 900px;
+  background-image: url("https://assets.feedbackstr.com/wp-content/uploads/2015/05/contact-test.jpg?1a358d");
+}
+.footer-background {
+  background-color: #DDD;
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
