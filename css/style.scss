@@ -1,0 +1,38 @@
+$darker-blue: #2C3E50;
+
+@font-face {
+
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-default {
+  background: $darker-blue;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-color: $darker-blue;
+}
+
+#Home {
+  padding-top: 98px;
+  background-image: url('../img/home.jpg');
+  background-size: contain;
+}
+
+#profile-pic
+{
+  float: right;
+  max-width: 200px;
+  height: auto;
+}
+
+#portfolio {
+  text-align: center;
+}
+
+#web {
+  text-align: center;
+}

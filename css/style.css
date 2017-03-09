@@ -1,36 +1,28 @@
-@font-face {
-
-}
-
+@font-face {}
 body, html {
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px; }
 
-.navbar-custom {
+.navbar-default {
   background: #2C3E50;
   text-transform: uppercase;
   font-weight: 700;
-  border: none;
-}
+  border-color: #2C3E50; }
 
 #Home {
   padding-top: 98px;
-  background-image: url('../img/home.jpg');
-  background-size: contain;
-}
+  background-image: url("../img/home.jpg");
+  background-size: contain; }
 
-#profile-pic
-{
+#profile-pic {
   float: right;
   max-width: 200px;
-  height: auto;
-}
+  height: auto; }
 
 #portfolio {
-  text-align: center;
-}
+  text-align: center; }
 
 #web {
-  text-align: center;
-}
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
