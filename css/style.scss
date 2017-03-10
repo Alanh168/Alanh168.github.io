@@ -1,25 +1,66 @@
 $darker-blue: #2C3E50;
 
-@font-face {
-
-}
-
 body, html {
   margin: 0px;
   padding: 0px;
 }
 
 .navbar-default {
-  background: $darker-blue;
+  background-color: $darker-blue;
+  color: white;
   text-transform: uppercase;
   font-weight: 700;
-  border-color: $darker-blue;
+  border-bottom: 3px solid black;
 }
 
-#Home {
-  padding-top: 98px;
-  background-image: url('../img/home.jpg');
-  background-size: contain;
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: white;
+  color: $darker-blue;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.navbar-default .navbar-text {
+  color: white;
+}
+
+.jumbotron {
+  padding-top: 198px;
+  padding-bottom: 148px;
+  margin: 0px;
+}
+
+.background {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 130vh;
+  width: 100%;
+  /*The Sections*/
+ &:nth-child(2) {
+   background-image: url('../img/home.jpg');
+ }
+ &:nth-child(3) {
+   background-image: url('../img/education.jpg');
+ }
+ &:nth-child(4) {
+   background-image: url('../img/portfolio.jpg');
+ }
+}
+
+#home {
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 2px 2px 2px #000;
 }
 
 #profile-pic
@@ -30,9 +71,11 @@ body, html {
 }
 
 #portfolio {
+  color: white;
   text-align: center;
 }
 
 #web {
+  color: white;
   text-align: center;
 }
