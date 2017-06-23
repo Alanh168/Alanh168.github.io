@@ -19,28 +19,37 @@ body, html {
 }
 
 // Navigation
-.nav-pills {
+.nav, .nav-tabs, .nav-stacked {
+  padding: 0px;
   display: inline;
   position: fixed;
   top: 30vh;
   left: 89vw;
-  background-color: $tamarillo;
-  box-shadow:inset 0 -15px 5px -16px #111;
+  background-color: $heath;
   text-transform: uppercase;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
-  border-color: $mine-gray;
-  color: black;
-  &>li>a {
-    color: white;
-    &:hover {
-      background-color: white;
-      color: blue;
+  li {
+    &.active{
+      left:-20px;
+      -webkit-transition: left 2s; /* Safari */
+      transition: left 2s;
     }
-    // &:visited {
-    //   color: black;
-    // }
+    &:hover {
+      background-color: $heath;
+      left:-10px;
+    }
+    a {
+      display: block;
+      border: none;
+      margin: 0px;
+      color: $alabaster;
+      background-color: $heath;
+      &:hover {
+        background-color: $heath;
+      }
+    }
   }
 }
 

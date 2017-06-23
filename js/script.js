@@ -8,25 +8,21 @@ $("document").ready(function() {
     $("#home>.container").css("opacity", 1 - $(window).scrollTop() / 250);
   });
 
-  // Footer Same Height as Navbar
-  var height = $(".navbar-default").height();
-  $("footer").css("height", height);
+  // Highlight the nav as scrolling occurs
+  $('body').scrollspy({target: 'nav'});
 
-  $(".navbar-fixed-top").autoHidingNavbar();
-
-  // Navbar Invisible at top of Page
-  $('.navbar-default').css('visibility','hidden');
-
-  // Visible Navbar after scroll
-  // $(window).scroll(function () {
-  //   if ($(window).scrollTop() = '#') {
-  //     $(".navbar").css('visibility', 'visibile');
-  //   }
-  //   else if ($(window).scrollTop() = 0) {
-  //     $('.navbar').css('visibility','hidden');
-  //   }
-  // });
-
-  // Highlight the top nav as scrolling occurs
-  $('body').scrollspy({target: '.navbar-fixed-top'});
+  // Animate scroll when link is clicked:
+    // Select all links with hashes
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+              }, 1000);
+              return false;
+          }
+      }
+  });
 });
