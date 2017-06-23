@@ -15,7 +15,7 @@ $("document").ready(function() {
   $(".navbar-fixed-top").autoHidingNavbar();
 
   // Navbar Invisible at top of Page
-  // $('.navbar').css('visibility','hidden');
+  $('.navbar-default').css('visibility','hidden');
 
   // Visible Navbar after scroll
   // $(window).scroll(function () {
