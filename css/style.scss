@@ -19,29 +19,28 @@ body, html {
 }
 
 // Navigation
-.navbar-default {
-  opacity: .8;
-  background-color: $heath;
+.nav-pills {
+  display: inline;
+  position: fixed;
+  top: 30vh;
+  left: 89vw;
+  background-color: $tamarillo;
   box-shadow:inset 0 -15px 5px -16px #111;
   text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
   font-weight: 700;
   border-color: $mine-gray;
-  .navbar-brand {
-    color: white;
-    &:hover {
-      color: white;
-    }
-  }
-  .navbar-nav {
-    float: right;
-    display: block;
-  }
-  .navbar-nav>li>a {
+  color: black;
+  &>li>a {
     color: white;
     &:hover {
       background-color: white;
       color: blue;
     }
+    // &:visited {
+    //   color: black;
+    // }
   }
 }
 
@@ -170,7 +169,7 @@ body, html {
 }
 
 #contact {
-  min-height: 75vh;
+  min-height: 100vh;
   color: $mine-gray;
   font-family: Acme;
   text-align: center;
