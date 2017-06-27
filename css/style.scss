@@ -31,16 +31,8 @@ body, html {
   text-align: center;
   font-weight: 700;
   li {
-    &.active{
-      left:-20px;
-      -webkit-transition: left 1s; /* Safari */
-      transition: left 1s;
-    }
     &:hover {
       background-color: $heath;
-      left:-10px;
-      -webkit-transition: left 1s; /* Safari */
-      transition: left 1s;
     }
     a {
       display: block;

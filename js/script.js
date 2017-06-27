@@ -8,6 +8,13 @@ $("document").ready(function() {
     $("#home>.container").css("opacity", 1 - $(window).scrollTop() / 250);
   });
 
+// All Navbar Scripts
+  // Animate buttons on click
+  var buttons = $(".nav li");
+  buttons.onMouseOver(function() {
+    buttons.style.transform = "translateX(-10px)";
+  });
+
   // Highlight the nav as scrolling occurs
   $('body').scrollspy({target: 'nav'});
 
