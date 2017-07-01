@@ -11,7 +11,6 @@ $("document").ready(function() {
 // All Navbar-related Scripts
   // Animate buttons on click
   var buttons = $(".nav li a, .nav-tabs li a, .nav-stacked li a");
-  buttons.css('color','yellow');
   buttons.onmouseover = function() {
     console.log("mouseover check");
     buttons.css('color','blue');
