@@ -16,15 +16,37 @@
 
 <body>
 
-  <nav>
-    <ul class="nav nav-tabs nav-stacked">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">AMH</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+  <!-- <nav>
+    <ul class="nav nav-tabs">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <header id="home" class="background">
     <div class="container fade-in">
@@ -40,26 +62,12 @@
   <header id="about" class="background">
     <div class="container fade-in">
       <div class="row">
-        <div class="col-md-12">
-          <h1 class="underline">About Me</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-6">
           <h3>Biography</h3>
           <p>I am a Web Developer who currently specializes in Front-End Web Development. I am both institutionally educated and self-taught, providing me a solid coding foundation as well as the ability to learn any thing I set my mind to. Having also studied Creative Writing, I am equipped to present content in the most effective manner possible. My goal is always impressive visual design combined with efficient presentation of information.</p>
         </div>
         <div class="col-md-6">
-          <img class="img-rounded" src="img/profile-pic.jpg"/>
-        </div>
-        <div class="col-md-3">
-          <h3>Details</h3>
-          <p><strong>Name:</strong></p>
-          <p>Alan Michael Hernandez</p>
-          <p><strong>Age:</strong></p>
-          <p>23</p>
-          <p><strong>Location:</strong></p>
-          <p>Miami, Fl (Looking to Relocate)</p>
+          <img class="img-responsive" src="img/profile-pic.jpg"/>
         </div>
       </div>
     </div>

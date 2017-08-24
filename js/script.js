@@ -1,11 +1,12 @@
 $("document").ready(function() {
 
-  // Header fade in on page load
-  $(".fade-in").fadeIn(3000);
-
-  // Fade in/out when scrolling to/from header
-  $(window).scroll(function(){
-    $("#home>.container").css("opacity", 1 - $(window).scrollTop() / 250);
+  // Shrink navbar on scroll
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('nav').addClass('shrink');
+    } else {
+      $('nav').removeClass('shrink');
+    }
   });
 
 // All Navbar-related Scripts
