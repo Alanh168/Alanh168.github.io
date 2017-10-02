@@ -1,13 +1,12 @@
 $("document").ready(function() {
 
-  // Shrink navbar on scroll
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $('nav').addClass('shrink');
-    } else {
-      $('nav').removeClass('shrink');
-    }
-  });
+  $(window).on('scroll', function() {
+       if (Math.round($(window).scrollTop()) > 50) {
+         $('.navbar').addClass('scrolled');
+       } else {
+         $('.navbar').removeClass('scrolled');
+       }
+     });
 
 // All Navbar-related Scripts
   // Animate buttons on click
