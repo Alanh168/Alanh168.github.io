@@ -1,28 +1,22 @@
 $("document").ready(function() {
 
-  // Header fade in on page load
-  $(".fade-in").fadeIn(3000);
+  $(window).on('scroll', function() {
+       if (Math.round($(window).scrollTop()) > 50) {
+         $('.navbar').addClass('scrolled');
+       } else {
+         $('.navbar').removeClass('scrolled');
+       }
+     });
 
-  // Fade in/out when scrolling to/from header
-  $(window).scroll(function(){
-    $("#home>.container").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
+// All Navbar-related Scripts
+  // Animate buttons on click
+  var buttons = $(".nav li a, .nav-tabs li a, .nav-stacked li a");
+  buttons.onmouseover = function() {
+    console.log("mouseover check");
+    buttons.css('color','blue');
+    buttons.style.transform = "translateX(-20px)";
+  };
 
   // Highlight the nav as scrolling occurs
   $('body').scrollspy({target: 'nav'});
-
-  // Animate scroll when link is clicked:
-    // Select all links with hashes
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-             if (target.length) {
-               $('html,body').animate({
-                   scrollTop: target.offset().top
-              }, 1000);
-              return false;
-          }
-      }
-  });
 });

@@ -1,17 +1,20 @@
 # Alanh168.github.io
 This is my personal Portfolio Web Site.
+
+The site can be accessed at alanmhernandez.com
+
 It will contain the following:
   * Portfolio
   * Resume Experience Information
   * Contact Info
 
 The site was coded using:
-  Languages:
+  * Languages:
     * HTML
     * CSS
     * JavaScript
-  Frameworks:
+  * Frameworks:
     * Bootstrap
     * jQuery
-  Other Technologies:
+  * Other Technologies:
     * Gulp

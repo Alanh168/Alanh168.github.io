@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One|Baloo+Chettan|Pacifico|Acme');
 
-$heath: #561420;
-$tamarillo: #821122;
-$twine: #C59A6F;
-$mine-gray: #333333;
-$silver: #CCCCCC;
 $alabaster: #FCFCFC;
+$not-white: #eee;
+$cloud: #5682c9;
+$mountain: #121c37;
+$sky: #45a9fe;
+$sunny-mountain: #ffd476;
+$sunny-mountain-shadow: #d58040;
 $facebook-color: #3b5998;
 $linkedin-color: #0077B5;
 
 body, html {
   margin: 0px;
   padding: 0px;
+  background-color: $alabaster;
 }
 
 ::-webkit-scrollbar {
@@ -19,39 +21,69 @@ body, html {
 }
 
 // Navigation
-.nav, .nav-tabs, .nav-stacked {
-  padding: 0px;
-  display: inline;
+header {
   position: fixed;
-  top: 30vh;
-  left: 89vw;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 700;
-  li {
-    &.active{
-      left:-20px;
-      -webkit-transition: left 1s; /* Safari */
-      transition: left 1s;
-    }
-    &:hover {
-      background-color: $heath;
-      left:-10px;
-      -webkit-transition: left 1s; /* Safari */
-      transition: left 1s;
-    }
-    a {
-      display: block;
-      border: none;
-      margin: 0px;
-      color: $alabaster;
-      background-color: $heath;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  color: white;
+}
+
+.navbar {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  transition: 0.5s ease;
+  .nav {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+    .item {
+      list-style: none;
+      display: inline-block;
+      font-size: 18px;
+      padding: 5px;
+      font-weight: 400;
+      line-height: 80px;
+      margin-right: 20px;
+      transition: 0.5s ease;
       &:hover {
-        background-color: $heath;
+        background-color: white;
+        color: $mountain;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
+  }
+}
+
+.scrolled {
+ transition: 0.5s ease;
+}
+
+.scrolled.navbar {
+  height: 50px;
+  background-color: $mountain;
+  transition: 0.5s ease;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+
+.scrolled.navbar .nav .item {
+  line-height: 20px;
+  transition: 0.5s ease;
+}
+
+section {
+  &:not(#home){
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 
@@ -61,38 +93,26 @@ body, html {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
+  box-shadow: -10px 0 8px -8px black, 10px 0 8px -8px black;
   // border: 1px solid black;
-  min-height: 110vh;
+  min-height: 95vh;
   width: 100%;
+  background-color: $not-white;
   /*The Sections*/
- &:nth-child(2) {
-   background-image: url('../img/home.jpg');
+ &:before{
+
  }
- &:nth-child(3) {
-   &::after {
-     width : 100%;
-     height: 100%;
-     background-image: url('../img/about.jpg');
-     opacity: .9;
-   }
+ &:nth-child(2) {
+   background-image: url('../img/header.jpg');
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
  }
  &:nth-child(4) {
-   background-image: url('../img/experience.png');
+   background-color: $mountain;
  }
- &:nth-child(5) {
-  background-image: url('../img/contact.jpg');
- }
- &:nth-child(6) {
-   background-color: $silver;
- }
-}
-
-.fade-in {
-  display: none;
 }
 
 #home {
-  color: white;
+  color: $not-white;
   -webkit-text-stroke: 2px black;
   text-align: center;
   font-family: 'Baloo Chettan';
@@ -110,37 +130,33 @@ body, html {
 
 .underline {
   display: inline-block;
-  border-bottom: 2px solid $tamarillo;
+  border-bottom: 2px solid $mountain;
 }
 
 #about {
-  color: $tamarillo;
+  color: white;
+  background-color: $mountain;
   font-family: Acme;
   text-align: center;
+  min-height: 30vh;
   h1 {
     text-align: center;
-  }
-  h3 {
-    font-size: 30px;
-    font-weight: 700;
-    text-align: left;
+    margin-bottom: 2em;
   }
   p {
-    color: $mine-gray;
     font-size: 20px;
-    text-align: left;
   }
   img
   {
-    margin-top: 50px;
-    max-width: 300px;
+    width: 100%;
     height: auto;
     box-shadow: 0 0 8px 8px $alabaster inset;
   }
 }
 
 #experience {
-  color: $tamarillo;
+  color: $mountain;
+  background-color: $not-white;
   text-align: center;
   font-family: Acme;
   h3 {
@@ -162,12 +178,13 @@ body, html {
     padding-bottom: 5%;
   }
   .divider {
-    border-left: 2px solid $tamarillo;
+    border-left: 2px solid $mountain;
   }
 }
 
 #portfolio {
   color: white;
+  background-color: $mountain;
   text-align: center;
   font-family: Acme;
   .row {
@@ -176,12 +193,11 @@ body, html {
 }
 
 #skills {
-
 }
 
 #contact {
-  min-height: 100vh;
-  color: $mine-gray;
+  min-height: 20vh;
+  color: $mountain;
   font-family: Acme;
   text-align: center;
   .underline {
@@ -192,8 +208,7 @@ body, html {
   }
   p {
     text-align: left;
-    color: $tamarillo;
-    font-size: 24px;
+    font-size: 20px;
   }
   a {
     text-align: left;
@@ -204,8 +219,6 @@ body, html {
     height: 75px;
     padding: 10px;
     margin: 10px;
-    background-color: $alabaster;
-    border: 2px solid black;
   }
   #free-code-camp {
     width: 85px;
@@ -238,19 +251,5 @@ body, html {
       color: white;
       background-color: black;
     }
-  }
-}
-
-footer {
-  border: 1px solid black;
-  box-sizing: border-box;
-  box-shadow:inset 0 15px 5px -16px #111;
-  background-color: $heath;
-  text-align: center;
-  text-shadow: 2px 2px 2px #000;
-  p {
-    margin: 12px 0;
-    font-size: 14px;
-    color: white;
   }
 }
