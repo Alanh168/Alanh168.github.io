@@ -34,6 +34,8 @@ header {
   height: 80px;
   width: 100%;
   transition: 0.5s ease;
+  font-family: 'Lato';
+  text-shadow: 1px 1px 4px rgba(6, 57, 102, 1);
   .nav {
     margin: 0;
     padding: 0;
@@ -102,7 +104,6 @@ section {
 
 #home {
   color: white;
-  // -webkit-text-stroke: 1px black;
   text-shadow: 1px 1px 4px rgba(6, 57, 102, 1);
   background-image: url(../img/header.jpg);
   text-align: center;
@@ -111,7 +112,7 @@ section {
     top: auto;
     bottom: auto;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 500;
   }
   p {
     font-size: 34px;
@@ -132,9 +133,10 @@ section {
   min-height: 30vh;
   h1 {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   p {
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
   }
   img
@@ -180,6 +182,29 @@ section {
   font-family: Acme;
   .row {
     margin-bottom: 30px;
+  }
+  .site-preview {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    // box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      border-radius: 5px;
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+    &:hover::after {
+      opacity: 1;
+    }
   }
 }
 
