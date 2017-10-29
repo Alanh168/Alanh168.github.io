@@ -177,7 +177,8 @@ section {
 
 #portfolio {
   color: white;
-  background-color: $mountain;
+  background-color: black;
+  overflow: hidden;
   text-align: center;
   font-family: Acme;
   .row {
