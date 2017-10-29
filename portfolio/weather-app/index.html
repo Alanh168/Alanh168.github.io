@@ -6,28 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <!-- Styles -->
+  <!--build:css css/styles.min.css-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--endbuild-->
 </head>
 
 <body>
 
   <div id="container-box">
     <div id = "cloud"><span class='shadow'></span></div>
+    
+    <div id=location>
+      <h2>Your Coordinates:</h2>
+      <div id="latitude">
+        <h2 class="location-text">Latitude: </h2>
+        <h2 class="coordinates"></h2>
+      </div>
+      <div id="longitude">
+        <h2 class="location-text">Longitude: </h2>
+        <h2 class="coordinates"></h2>  
+      </div>
+      <br/>
+    </div>
 
-    <h2>You are Located in: </h2>
-    <h2 id="location"></h2>
     <span class="weatherData">
-      <span id="temperature"></span>
-      <button id="changeDegreeUnits"><p>&degC</p></button>
+      <a id="changeDegreeUnits"><span id="temperature"></span></a>
     </span>
     <span id="weather" class="weatherData"></span>
     <span id="wind" class="weatherData"></span>
   </div>
 
+  <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+  <!--build:js js/main.min.js -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
