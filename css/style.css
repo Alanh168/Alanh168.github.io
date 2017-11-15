@@ -131,7 +131,7 @@ section:not(#home) {
 
 #portfolio {
   color: white;
-  background-color: black;
+  background-color: #121c37;
   overflow: hidden;
   text-align: center;
   font-family: Acme; }
