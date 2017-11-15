@@ -57,30 +57,46 @@ $(document).ready(function() {
       }
       $("#wind").html(windDirection + " " + windSpeed + " knots");
 
-      // Change Page Color according to Weather
+      // Change Icon according to Weather
       if(data.weather[0].main == 'Rain') {
-
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-showers"></i>`
+        );
       }
       else if(data.weather[0].main == 'Drizzle') {
-
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-sprinkle"></i>`
+        );
       }
       else if(data.weather[0].main == 'Clouds') {
-        
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-cloudy"></i>`
+        );
       }
       else if(data.weather[0].main == 'Snow') {
-        
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-snow"></i>`
+        );
       }
       else if(data.weather[0].main == 'Clear') {
-        
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-day-sunny"></i>`
+        );
       }
       else if(data.weather[0].main == 'Thunderstorm') {
-        
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-thunderstorm"></i>`
+        );
       }
       else if(data.weather[0].main == 'Mist') {
-        
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-fog"></i>`
+        );
       }
       else if(data.weather[0].main == 'Smoke') {
-        
+        document.querySelector(".icon-area").insertAdjacentHTML("beforeend",
+        `<i class="wi wi-smoke"></i>`
+        );
       }
     });
   }
@@ -101,11 +117,3 @@ $('#changeDegreeUnits').click(function() {
     $('#temperature').text(temp + '\xB0F');
   }
 });
-
-
-  // function changeCloudColor() {
-  // }
-  //
-  // function changePageColor() {
-  // }
-
