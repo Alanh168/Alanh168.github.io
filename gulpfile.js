@@ -44,21 +44,21 @@ gulp.task('watch', function() {
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function() {
 
-  return gulp.src('app/*.html')
+  return gulp.src('*.html')
     .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', cssnano()))
+    .pipe(gulpIf('js/*.js', uglify()))
+    .pipe(gulpIf('css/*.css', cssnano()))
     .pipe(gulp.dest('dist'));
 });
 
 // Optimizing Images 
 gulp.task('images', function() {
-  return gulp.src('images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('img/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
       interlaced: true,
     })))
-    .pipe(gulp.dest('images'))
+    .pipe(gulp.dest('img'))
 });
 
 // Copying fonts 

@@ -156,6 +156,9 @@ section:not(#home) {
     #portfolio .site-preview:hover::after {
       opacity: 1; }
 
+.project p {
+  visibility: hidden; }
+
 #contact {
   min-height: 20vh;
   color: #121c37;
