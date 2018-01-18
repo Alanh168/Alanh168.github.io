@@ -19,4 +19,15 @@ $("document").ready(function() {
 
   // Highlight the nav as scrolling occurs
   $('body').scrollspy({target: 'nav'});
+
+  // Animate Individual Project on Hover
+  var project = $(".project");
+  project.mouseover(function() {
+    console.log("Testing mouseover");
+    $(".project p").css("display", "block");
+  });
+  project.mouseleave(function() {
+    console.log("Testing mouseleave");
+    $(".project p").css("display", "none");    
+  });
 });
