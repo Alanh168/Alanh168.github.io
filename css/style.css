@@ -24,7 +24,6 @@ header {
   .navbar .nav {
     margin: 0;
     padding: 0;
-    display: inline-block;
     float: right;
     margin-right: 5%; }
     .navbar .nav .item {
@@ -155,41 +154,6 @@ section:not(#home) {
       transform: scale(1.2, 1.2); }
     #portfolio .site-preview:hover::after {
       opacity: 1; }
-
-.project p {
-  display: absolute;
-  background-color: gray;
-  opacity: 0.7;
-  display: none; }
-
-.project:after, .project:before {
-  position: absolute;
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s; }
-
-.project:after {
-  content: '\A';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6); }
-
-.project:before {
-  content: attr(data-content);
-  width: 100%;
-  color: #fff;
-  z-index: 1;
-  bottom: 0;
-  padding: 4px 10px;
-  text-align: center;
-  background: #45a9fe;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
-.project:hover:after, .project:hover:before {
-  opacity: 1; }
 
 #contact {
   min-height: 20vh;
