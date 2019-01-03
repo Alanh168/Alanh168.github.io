@@ -180,7 +180,8 @@ section {
   overflow: hidden;
   text-align: center;
   font-family: Acme;
-  .row {
+  
+  /* .row {
     margin-bottom: 30px;
   }
   .site-preview {
@@ -205,7 +206,7 @@ section {
     &:hover::after {
       opacity: 1;
     }
-  }
+  } */
 }
 
 #contact {
