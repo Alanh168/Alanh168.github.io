@@ -24,7 +24,6 @@ header {
   .navbar .nav {
     margin: 0;
     padding: 0;
-    display: inline-block;
     float: right;
     margin-right: 5%; }
     .navbar .nav .item {
@@ -155,9 +154,6 @@ section:not(#home) {
       transform: scale(1.2, 1.2); }
     #portfolio .site-preview:hover::after {
       opacity: 1; }
-
-.project p {
-  visibility: hidden; }
 
 #contact {
   min-height: 20vh;

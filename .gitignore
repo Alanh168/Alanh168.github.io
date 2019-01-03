@@ -2,4 +2,6 @@
 gulpfile.js
 css/.sass-cache
 references.txt
+package.json
+.vscode
 .idea/

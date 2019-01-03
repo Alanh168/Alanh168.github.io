@@ -13,6 +13,7 @@ $(document).ready(function() {
 				method: "GET",
 				dataType: "json",
 				cache: false,
+				async: false,
 				success: function(data){
 					console.log("Testing AJAX call on username: " + data.display_name + " " + data.bio + " " + data._links.self);
 					var userInfo = [data.display_name, data.bio, data.name];
@@ -22,16 +23,17 @@ $(document).ready(function() {
 					if(userInfo[1] == null) {
 						userInfo[1] = "";
 					}
+					users.push(userInfo);
 					streams.insertAdjacentHTML("beforeend",
-						`<a href="https://www.twitch.tv/${userInfo[2]}" target="_blank" rel="noreferrer">
+						`<a href="https://www.twitch.tv/${users[asyncCount][2]}" target="_blank" rel="noreferrer">
 							<div class="stream">
 								<div id="item${asyncCount}" class="row">
 									<div class="col-2 image-container">
 										<img class="streamLogo" src="${data.logo}"/>
 									</div>
 									<div class="col-8">
-										<h3 class="streamTitle">${userInfo[0]}</h3>
-										<p class="streamBio">${userInfo[1]}</p>
+										<h3 class="streamTitle">${users[asyncCount][0]}</h3>
+										<p class="streamBio">${users[asyncCount][1]}</p>
 									</div>
 								</div>
 			      			</div>
@@ -53,11 +55,12 @@ $(document).ready(function() {
 				method: "GET",
 				dataType: "json",
 				cache: false,
+				async: false,
 				success: function(data){
 					console.log("Testing link value: " + data._links.self);
 					var user = document.querySelector(`#item${asyncCount}`);
 					if(data.stream == null) {
-						console.log("Testing stream value: " + data.stream);
+						console.log("Testing stream status: " + data.stream);
 						user.insertAdjacentHTML("beforeend",
 							`<div class="col-2">
 								<h4 class="offline">&otimes;</h4>
@@ -65,6 +68,7 @@ $(document).ready(function() {
 						);
 					}
 					else {
+						console.log("Testing stream status: " + data.stream.channel.status);
 						user.insertAdjacentHTML("beforeend",
 							`<div class="col-2">
 								<h4 class="online">&check;</h4>
@@ -99,6 +103,7 @@ $(document).ready(function() {
 	
 	// List of usernames to be used for Twitch API calls
 	const usernames = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+	var users = [];
 	populateList();
 	getOnlineStatus();
 	document.querySelector(".searchFormInput").addEventListener("input", searchList);
