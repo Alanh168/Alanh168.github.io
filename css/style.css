@@ -133,15 +133,17 @@ section:not(#home) {
   background-color: #121c37;
   overflow: hidden;
   text-align: center;
-  font-family: Acme; }
-  #portfolio .row {
-    margin-bottom: 30px; }
-  #portfolio .site-preview {
+  font-family: Acme;
+  /* .row {
+    margin-bottom: 30px;
+  }
+  .site-preview {
     position: relative;
     display: inline-block;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
-    #portfolio .site-preview::after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    // box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    &::after {
       content: '';
       position: absolute;
       z-index: -1;
@@ -149,11 +151,15 @@ section:not(#home) {
       height: 100%;
       opacity: 0;
       border-radius: 5px;
-      transition: opacity 0.3s ease-in-out; }
-    #portfolio .site-preview:hover {
-      transform: scale(1.2, 1.2); }
-    #portfolio .site-preview:hover::after {
-      opacity: 1; }
+      transition: opacity 0.3s ease-in-out;
+    }
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  } */ }
 
 #contact {
   min-height: 20vh;
