@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Francois+One|Baloo+Chettan|Pacifico|Acme|Lato");
+@keyframes grow {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); } }
+
+@-webkit-keyframes grow {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); } }
+
 body, html {
   margin: 0px;
   padding: 0px;
@@ -37,8 +49,8 @@ header {
       margin-right: 20px;
       transition: 0.5s ease; }
       .navbar .nav .item:hover {
-        background-color: white;
-        color: #121c37; }
+        font-weight: 700;
+        font-size: 20px; }
       .navbar .nav .item a {
         text-decoration: none;
         color: inherit; }
@@ -76,22 +88,22 @@ section:not(#home) {
   color: white;
   text-shadow: 1px 1px 4px #063966;
   background-image: url(../img/header.jpg);
+  animation: grow 60s linear .5s infinite;
   text-align: center;
   font-family: 'Lato'; }
   #home h1 {
     top: auto;
     bottom: auto;
     font-size: 60px;
-    font-weight: 500; }
-  #home p {
-    font-size: 34px;
-    font-weight: 700; }
+    font-weight: 500;
+    z-index: 1; }
 
 .fog {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #000; }
+  background-color: #000;
+  z-index: 0; }
   .fog__container {
     position: absolute;
     height: 100%;
@@ -197,7 +209,9 @@ section:not(#home) {
   min-height: 20vh;
   color: #121c37;
   font-family: Acme;
-  text-align: center; }
+  text-align: center;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
   #contact .underline {
     margin-bottom: 50px; }
   #contact h2 {

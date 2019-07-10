@@ -10,6 +10,16 @@ $sunny-mountain-shadow: #d58040;
 $facebook-color: #3b5998;
 $linkedin-color: #0077B5;
 
+@keyframes grow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2);}
+}
+
+@-webkit-keyframes grow {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.2);}
+}
+
 body, html {
   margin: 0px;
   padding: 0px;
@@ -52,8 +62,8 @@ header {
       margin-right: 20px;
       transition: 0.5s ease;
       &:hover {
-        background-color: white;
-        color: $mountain;
+        font-weight: 700;
+        font-size: 20px;
       }
       a {
         text-decoration: none;
@@ -106,6 +116,7 @@ section {
   color: white;
   text-shadow: 1px 1px 4px rgba(6, 57, 102, 1);
   background-image: url(../img/header.jpg);
+  animation: grow 60s linear .5s infinite;
   text-align: center;
   font-family: 'Lato';
   h1 {
@@ -113,10 +124,7 @@ section {
     bottom: auto;
     font-size: 60px;
     font-weight: 500;
-  }
-  p {
-    font-size: 34px;
-    font-weight: 700;
+    z-index: 1;
   }
 }
 
@@ -128,6 +136,7 @@ section {
   width: 100%;
 
   background-color: #000;
+  z-index: 0;
 
   &__container {
     position: absolute;
@@ -261,6 +270,8 @@ section {
   color: $mountain;
   font-family: Acme;
   text-align: center;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
   .underline {
     margin-bottom: 50px;
   }
