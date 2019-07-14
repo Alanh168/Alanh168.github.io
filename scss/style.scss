@@ -12,12 +12,44 @@ $linkedin-color: #0077B5;
 
 @keyframes grow {
   0% { transform: scale(1); }
-  50% { transform: scale(1.2);}
+  50% { transform: scale(1.1);}
 }
 
 @-webkit-keyframes grow {
   0% { transform: scale(1);}
-  50% { transform: scale(1.2);}
+  50% { transform: scale(1.1);}
+}
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 body, html {
@@ -28,6 +60,48 @@ body, html {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+//Loader
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $mountain;
+  .loader-inner {
+    position: relative;
+    -webkit-transform: translate(-150px, -150px);
+    transform: translate(-150px, -150px);
+    > div:nth-child(2) {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+    > div:nth-child(3) {
+      -webkit-animation-delay: 0.10s;
+      animation-delay: 0.10s;
+    }
+    > div {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      background-color: white;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      margin: 0;
+      -webkit-animation: ball-scale-multiple 2s 0s linear infinite;
+      animation: ball-scale-multiple 2s 0s linear infinite;
+    }
+  }
 }
 
 // Navigation
