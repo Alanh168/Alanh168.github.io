@@ -3,13 +3,37 @@
   0% {
     transform: scale(1); }
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
 
 @-webkit-keyframes grow {
   0% {
     transform: scale(1); }
   50% {
-    transform: scale(1.2); } }
+    transform: scale(1.1); } }
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
+
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0; } }
 
 body, html {
   margin: 0px;
@@ -18,6 +42,42 @@ body, html {
 
 ::-webkit-scrollbar {
   display: none; }
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121c37; }
+  .loader-container .loader-inner {
+    position: relative;
+    -webkit-transform: translate(-150px, -150px);
+    transform: translate(-150px, -150px); }
+    .loader-container .loader-inner > div:nth-child(2) {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s; }
+    .loader-container .loader-inner > div:nth-child(3) {
+      -webkit-animation-delay: 0.10s;
+      animation-delay: 0.10s; }
+    .loader-container .loader-inner > div {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      background-color: white;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      margin: 0;
+      -webkit-animation: ball-scale-multiple 2s 0s linear infinite;
+      animation: ball-scale-multiple 2s 0s linear infinite; }
 
 header {
   position: fixed;
@@ -87,16 +147,21 @@ section:not(#home) {
 #home {
   color: white;
   text-shadow: 1px 1px 4px #063966;
-  background-image: url(../img/header.jpg);
-  animation: grow 60s linear .5s infinite;
   text-align: center;
-  font-family: 'Lato'; }
+  font-family: 'Lato', sans-serif;
+  height: 100vh !important; }
   #home h1 {
+    display: inline-block;
+    padding-bottom: 15px;
     top: auto;
     bottom: auto;
     font-size: 60px;
     font-weight: 500;
-    z-index: 1; }
+    z-index: 1;
+    border-bottom: 1px solid white; }
+  #home .background {
+    background-image: url(../img/header.jpg);
+    animation: grow 30s linear .5s infinite; }
 
 .fog {
   position: relative;
@@ -104,25 +169,25 @@ section:not(#home) {
   width: 100%;
   background-color: #000;
   z-index: 0; }
-  .fog__container {
+  .fog .fog-container {
     position: absolute;
     height: 100%;
     width: 100%;
     overflow: hidden; }
-  .fog__img {
-    position: absolute;
-    height: 100vh;
-    width: 300vw; }
-    .fog__img--first {
-      background: url("../img/fog-1.png") repeat-x;
-      background-size: contain;
-      background-position: center;
-      animation: marquee 60s linear infinite; }
-    .fog__img--second {
-      background: url("../img/fog-2.png") repeat-x;
-      background-size: contain;
-      background-position: center;
-      animation: marquee 40s linear infinite; }
+    .fog .fog-container .fog-img {
+      position: absolute;
+      height: 100vh;
+      width: 300vw; }
+      .fog .fog-container .fog-img.fog-img-first {
+        background: url("../img/fog-1.png") repeat-x;
+        background-size: contain;
+        background-position: center;
+        animation: marquee 60s linear infinite; }
+      .fog .fog-container .fog-img.fog-img-second {
+        background: url("../img/fog-2.png") repeat-x;
+        background-size: contain;
+        background-position: center;
+        animation: marquee 40s linear infinite; }
 
 @keyframes marquee {
   0% {
@@ -204,6 +269,8 @@ section:not(#home) {
       opacity: 1;
     }
   } */ }
+  #portfolio .project {
+    margin-bottom: 15px; }
 
 #contact {
   min-height: 20vh;
@@ -227,27 +294,33 @@ section:not(#home) {
     height: 75px;
     padding: 10px;
     margin: 10px; }
-  #contact #free-code-camp {
+  #contact #social-media a i {
+    border-radius: 10px; }
+  #contact #social-media #free-code-camp {
     width: 85px;
     height: 75px;
     padding-left: 5px;
     padding-right: 5px;
     color: darkgreen; }
-    #contact #free-code-camp:hover {
+    #contact #social-media #free-code-camp:hover {
       color: white;
-      background-color: darkgreen; }
-  #contact #facebook {
+      background-color: darkgreen;
+      transition-duration: 1s; }
+  #contact #social-media #facebook {
     color: #3b5998; }
-    #contact #facebook:hover {
+    #contact #social-media #facebook:hover {
       color: white;
-      background-color: #3b5998; }
-  #contact #linkedin {
+      background-color: #3b5998;
+      transition-duration: 1s; }
+  #contact #social-media #linkedin {
     color: #0077B5; }
-    #contact #linkedin:hover {
+    #contact #social-media #linkedin:hover {
       color: white;
-      background-color: #0077B5; }
-  #contact #github {
+      background-color: #0077B5;
+      transition-duration: 1s; }
+  #contact #social-media #github {
     color: black; }
-    #contact #github:hover {
+    #contact #social-media #github:hover {
       color: white;
-      background-color: black; }
+      background-color: black;
+      transition-duration: 1s; }

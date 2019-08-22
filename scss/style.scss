@@ -180,7 +180,6 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: -10px 0 8px -8px black, 10px 0 8px -8px black;
-  // border: 1px solid black;
   min-height: 95vh;
   width: 100%;
   background-color: $not-white;
@@ -189,56 +188,53 @@ section {
 #home {
   color: white;
   text-shadow: 1px 1px 4px rgba(6, 57, 102, 1);
-  background-image: url(../img/header.jpg);
-  animation: grow 60s linear .5s infinite;
   text-align: center;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
+  height: 100vh !important;
   h1 {
+    display: inline-block;
+    padding-bottom: 15px;
     top: auto;
     bottom: auto;
     font-size: 60px;
     font-weight: 500;
     z-index: 1;
+    border-bottom: 1px solid white;
+  }
+  .background {
+    background-image: url(../img/header.jpg);
+    animation: grow 30s linear .5s infinite;
   }
 }
 
 // Fog
 .fog {
   position: relative;
-
   height: 100vh;
   width: 100%;
-
   background-color: #000;
   z-index: 0;
-
-  &__container {
+  .fog-container {
     position: absolute;
-
     height: 100%;
     width: 100%;
-
     overflow: hidden;
-  }
-
-  &__img {
-    position: absolute;
-
-    height: 100vh;
-    width: 300vw;
-
-    &--first {
-      background: url('../img/fog-1.png') repeat-x;
-      background-size: contain;
-      background-position: center;
-      animation: marquee 60s linear infinite;
-    }
-
-    &--second {
-      background: url('../img/fog-2.png') repeat-x;
-      background-size: contain;
-      background-position: center;
-      animation: marquee 40s linear infinite;
+    .fog-img {
+      position: absolute;
+      height: 100vh;
+      width: 300vw;
+      &.fog-img-first {
+        background: url('../img/fog-1.png') repeat-x;
+        background-size: contain;
+        background-position: center;
+        animation: marquee 60s linear infinite;
+      }
+      &.fog-img-second {
+        background: url('../img/fog-2.png') repeat-x;
+        background-size: contain;
+        background-position: center;
+        animation: marquee 40s linear infinite;
+      }
     }
   }
 }
@@ -310,6 +306,9 @@ section {
   overflow: hidden;
   text-align: center;
   font-family: Acme;
+  .project {
+    margin-bottom: 15px;
+  }
   
   /* .row {
     margin-bottom: 30px;
@@ -366,36 +365,45 @@ section {
     padding: 10px;
     margin: 10px;
   }
-  #free-code-camp {
-    width: 85px;
-    height: 75px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: darkgreen;
-    &:hover {
-      color: white;
-      background-color: darkgreen;
+  #social-media {
+    a i {
+      border-radius: 10px;
     }
-  }
-  #facebook {
-    color: $facebook-color;
-    &:hover {
-      color: white;
-      background-color: $facebook-color;
+    #free-code-camp {
+      width: 85px;
+      height: 75px;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: darkgreen;
+      &:hover {
+        color: white;
+        background-color: darkgreen;
+        transition-duration: 1s;
+      }
     }
-  }
-  #linkedin {
-    color: $linkedin-color;
-    &:hover {
-      color: white;
-      background-color: $linkedin-color;
+    #facebook {
+      color: $facebook-color;
+      &:hover {
+        color: white;
+        background-color: $facebook-color;
+        transition-duration: 1s;
+      }
     }
-  }
-  #github {
-    color: black;
-    &:hover {
-      color: white;
-      background-color: black;
+    #linkedin {
+      color: $linkedin-color;
+      &:hover {
+        color: white;
+        background-color: $linkedin-color;
+        transition-duration: 1s;
+      }
+    }
+    #github {
+      color: black;
+      &:hover {
+        color: white;
+        background-color: black;
+        transition-duration: 1s;
+      }
     }
   }
 }
