@@ -403,3 +403,10 @@ section {
     }
   }
 }
+
+// Mobile View
+@media (max-width: 786px) {
+  .fog-container {
+    display: none;
+  }
+}

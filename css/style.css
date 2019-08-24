@@ -325,3 +325,7 @@ section:not(#home) {
       color: white;
       background-color: black;
       transition-duration: 1s; }
+
+@media (max-width: 786px) {
+  .fog-container {
+    display: none; } }
